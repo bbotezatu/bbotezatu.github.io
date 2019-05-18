@@ -1,0 +1,59 @@
+body{
+    background-color: #173F4F;
+    background-image: url("bg_img_resized.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;  
+}
+
+p {
+    color:#35B9AB
+}
+
+
+#main {
+    opacity: 0;
+    animation: topfade 1.5s forwards ;      
+    animation-delay: .75s;
+    position: relative;
+}
+
+#name{
+    font-size: 200%;
+    color: #35B9AB
+}
+
+#summary{
+    color: #173F4F;
+}
+
+.top_info li{ 
+    padding: 15px 45px 15px; 
+    margin: 0px 3 0px;
+    color:#35B9AB;
+    /*background-color: #178277;*/
+    display: inline-block;
+}
+
+.top_info{
+    animation: topfade 1.5s ease-out;
+    position: relative;
+    /*background-color: #178277;
+    /*font-weight: bold;*/
+}
+
+.top_info li:hover{
+    
+}
+
+.top_info a:link, :visited{
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+@keyframes topfade{
+    0%{top:-75px;opacity: 0;}
+    100%{top:0px;opacity: 1;}
+}
