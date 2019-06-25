@@ -11,7 +11,6 @@ p {
     color:#35B9AB
 }
 
-
 #main {
     opacity: 0;
     animation: topfade 1.5s forwards ;      
@@ -55,17 +54,29 @@ p {
     /*font-weight: bold;*/
 }
 
-.top_info li:hover{
-    
+.top_info li{
+    transition: 1s;
 }
+
+.top_info li:hover{
+    color:#ADEEE3;
+    /*font-size: 110%;*/
+}
+
 
 .top_info a:link, :visited{
     text-decoration: inherit;
     color: inherit;
 }
 
+#projects_tab:hover{
+    color:GRAY;
+    /*font-size: 90%;*/
+}
 
 @keyframes topfade{
     0%{top:-75px;opacity: 0;}
     100%{top:0px;opacity: 1;}
 }
+
+#loadOverlay{display: none;}
