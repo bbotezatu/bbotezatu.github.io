@@ -1,10 +1,16 @@
+.image-loading *,
+.image-loading *:before,
+.image-loading *:after {
+    animation-play-state: paused !important;
+}
+
 body{
-    background-color: #173F4F;
+    /*background-color: #173F4F;*/
     background-image: url("bg_img_resized.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Raleway', sans-serif;  
+    font-family: 'Raleway', sans-serif;   
 }
 
 p {
@@ -84,4 +90,3 @@ p {
     100%{top:0px;opacity: 1;}
 }
 
-#loadOverlay{display: none;}

@@ -9,10 +9,16 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="icon" href="letter_b_svg_icon_resized.jpg">
-		<!--FontAwesome Icons-->
+
 		<script src="https://kit.fontawesome.com/a70e3a9f52.js"></script>
-		<!--<script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>-->
-		<div id="loadOverlay" style="background-color:#333; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
+		<script>
+			//var img = document.querySelector("bg_img_resized.jpg");
+			document.body.classList.add('image-loading');
+			window.addEventListener("load", displayPage)
+			function displayPage(){
+				document.body.classList.remove('image-loading');
+			}
+		</script>
 	</head>		
 
 
@@ -26,12 +32,11 @@
 			</ul>
 		</div>
 
-    <div id="main" style="position:static;" >
+		<div id="main" style="position:static;" >
 			<br/>
 			<h1 id="name">Brandon Botezatu</h1>
 			<p id="summary">Hello, this is my personal site.<br>
-							More to come soon!</p>
+								More to come soon!</p>
 		</div>
-		
     </body>
 </html>
