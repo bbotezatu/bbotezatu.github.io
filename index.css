@@ -1,11 +1,13 @@
+/*
 .image-loading *,
 .image-loading *:before,
 .image-loading *:after {
     animation-play-state: paused !important;
 }
+*/
 
 body{
-    /*background-color: #173F4F;*/
+    background-color: #173F4F;
     background-image: url("bg_img_resized.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,25 +15,26 @@ body{
     font-family: 'Raleway', sans-serif;   
 }
 
-p {
+p{
     color:#35B9AB
 }
 
 #main {
     opacity: 0;
-    animation: topfade 1.5s forwards ;      
-    animation-delay: .75s;
+    animation: topfade 2.5s forwards ;      
+    animation-delay: .5s;
     position: relative;
     text-align:center;
 }
 
 #name{
-    font-size: 200%;
+    font-size: 300%;
     color: #35B9AB
 }
 
 #summary{
     color: #173F4F;
+    font-size: 150%;
 }
 
 .top_info ul{
@@ -42,6 +45,7 @@ p {
     margin-right:auto;
     text-align: center;
     margin: auto;
+
 }
 
 .top_info li{ 
@@ -50,7 +54,7 @@ p {
     color:#35B9AB;
     /*background-color: #178277;*/
     display: inline-block;
-    
+    font-size: 100%;
 }
 
 #top_bar{
@@ -58,7 +62,7 @@ p {
 }
 
 .top_info{
-    animation: topfade 1.5s ease-out;
+    animation: topfade 2s ease-out;
     position: relative;
     padding: 0%;
     /*background-color: #178277;
@@ -66,7 +70,7 @@ p {
 }
 
 .top_info li{
-    transition: 1s;
+    transition: .8s;
 }
 
 .top_info li:hover{
@@ -82,7 +86,7 @@ p {
 
 #projects_tab:hover{
     color:GRAY;
-    /*font-size: 90%;*/
+    font-size: 90%;
 }
 
 @keyframes topfade{
