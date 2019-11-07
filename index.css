@@ -65,12 +65,11 @@ p{
     animation: topfade 2s ease-out;
     position: relative;
     padding: 0%;
-    /*background-color: #178277;
-    /*font-weight: bold;*/
 }
 
 .top_info li{
     transition: .8s;
+    width:150px;
 }
 
 .top_info li:hover{
