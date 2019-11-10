@@ -13,24 +13,36 @@ p{
 }
 
 
+
+
 /*divs*/
 #main {
     opacity: 0;
     animation: topfade 2.5s forwards ;      
     animation-delay: .5s;
-    position: relative;
+    position:  static;
     text-align:center;
+    width:75%;
+    margin:auto;
 }
 
 #name{
     font-size: 300%;
-    color: #35B9AB
+    color: #35B9AB;
+    transition: 1.8s;
+}
+
+#name:hover{
+    color:#ADEEE3;
+    transition: .8s;
 }
 
 #summary{
     color: #173F4F;
-    font-size: 150%;
+    font-size: 160%;
+    color:black;
 }
+
 
 #top_bar{
     text-align: center;
@@ -51,18 +63,20 @@ p{
     margin-right:auto;
     text-align: center;
     margin: auto;
-
 }
 
 .top_info li{ 
-    padding: 15px 35px 15px; 
-    margin: 0px 3 0px;
+    padding: 1% 35px 1%; /*not sure about this.*/
+    margin: 0px 2 0px;
     color:#35B9AB;
-    /*background-color: #178277;*/
     display: inline-block;
     font-size: 100%;
     transition: .8s;
     width:150px;
+    max-width: 150px;
+    max-height: 1%;
+    position: static;
+    ;    
 }
 
 
@@ -75,7 +89,6 @@ p{
 
 .top_info li:hover{
     color:#ADEEE3;
-    /*font-size: 110%;*/
 }
 
 
